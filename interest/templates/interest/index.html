@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+    <h1>Simple Interest Calculator</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="principal">Principal</label>
+        <input type="text" name="principal">
+        <label for="time">Time</label>
+        <input type="text" name="time">
+        <label for="rate">Rate</label>
+        <input type="text" name="rate">
+        <input type="submit" value="Calculate Interest">
+    </form>
+    <br>
+    <h2>Total Interest:Rs. {{si_yr}}</h2>
+    <h2>Monthly Interest: Rs. {{si_month}} </h2>
+    
+</body>
+</html>
